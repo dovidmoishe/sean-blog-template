@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300;1,400&display=swap');
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: #f8f8f8;
+  --bg-color: #444444;
+}
+body {
+  font-family: "Merriweather", serif;
+
+  color: var(--bg-color);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+  background-color: var(--bg-color);
+  color: #f8f8f8;
+}
+.nav-links ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.nav-link a {
+  padding: .5rem;
+  display: block;
+  font-weight: 200;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: 0.3s;
+  background-color: transparent;
+}
+a.active {
+  border-bottom: 2px solid var(--text-color);
+}
+.nav-link {
+  list-style-type: none;
+  margin-left: 2em;
+}
+.nav-link a:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.hamburger-menu {
+  display: none;
+}
+header {
+  background-color: #c0c0c0;
+  text-align: center;
+  padding: 1em;
+  color: white;
+  height: 25em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 100px;
+  margin-top: 0.2em;
+}
+ul.breadcrumb {
+  list-style: none;
+  text-align: center;
+}
+ul.breadcrumb li {
+  display: inline;
+}
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  text-decoration: none;
+  color: white;
+}
+.contact {
+  margin: 5em;
+
+}
+.contact h1 {
+  font-size: 70px;
+  text-align: center;
+}
+.contact-form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.contact-information {
+  gap: 1em;
+}
+
+.contact-socials {
+  text-align: center;
+  margin-top: 1em;
+}
+.contact-socials .icons {
+  width: 20em;
+  gap: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.icon {
+  padding: 1em;
+  border-radius: 50%;
+  background-color: var(--bg-color);
+  text-align: center;
+  color: var(--text-color);
+  width: 5em;
+}
+.icon a {
+  color: var(--text-color);
+}
+.icon i {
+  font-size: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+form input {
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+  width: 30em;
+  outline: none;
+}
+form textarea {
+  font-family: 'Merriweather', sans-serif;
+  padding: 1em;
+  outline: none;
+}
+form button {
+  padding: 1em;
+  border-radius: 24px;
+  background-color: var(--bg-color);
+  font-family: 'Merriweather', sans-serif;
+  outline: none;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
+.newsletter {
+  background-color: #ffdf00;
+  text-align: center;
+  padding: 2em;
+}
+.newsletter-input-field {
+  margin-top: 2em;
+}
+.newsletter-input-field input {
+  padding: 1em;
+  width: 20em;
+  border: 1px solid var(--bg-color);
+  background-color: #ffdf00;
+  font-family: 'Merriweather', serif;
+  appearance: none;
+  outline: none;
+  border-radius: .5em;
+}
+
+.newsletter-input-field button {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  padding: 1em;
+  border-radius: .5em;
+  border: none;
+  outline: none;
+  margin-left: 1em;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.footer {
+  background-color: #8d8c8c;
+  color: var(--text-color);
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-about {
+
+}
+.footer-about p {
+  margin-top: 2em;
+  width: 20em;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  margin-top: 2em;
+}
+.social-icon {
+  background-color: var(--bg-color);
+  padding: .8em;
+  border-radius: .2em;
+}
+.social-icon a {
+  color: var(--text-color);
+}
+
+.ft-links {
+  margin-top: 2em;
+}
+.footer-link {
+  list-style-type: none;
+}
+.footer-link a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+.footer-link::before {
+  content: '-> ';
+}
+.footer-posts {
+  margin-top: 2em;
+  width: 25em;
+}
+.footer-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 1em;
+  padding: .5em;
+  transition: .2s;
+}
+.footer-post:hover {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}
+.footer-post img{
+  width: 60px;
+  height: 60px;
+  border-radius: .2em;
+}
+.contact-me-element {
+  display: flex;
+  align-items: center;
+  margin-top: 2em;
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sean Muir</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/adb4fef6e8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,10 +15,13 @@
         </div>
         <div class="nav-links">
             <ul>
-                <li class="nav-link"><a href="#">Posts</a></li>
-                <li class="nav-link"><a href="#">About me</a></li>
-                <li class="nav-link"><a href="#">Contact me</a></li>
+                <li class="nav-link"><a class="active">Blog</a></li>
+                <li class="nav-link"><a href="/about.html">About me</a></li>
+                <li class="nav-link"><a href="contact.html">Contact me</a></li>
             </ul>
+        </div>
+        <div class="hamburger-menu">
+            <a href="javascript:void(0)"><img src="./images/menu-burger-free-icon-font.svg" alt="" style="width: 30px;height: 30px;"></a>
         </div>
     </nav>
 
@@ -35,14 +38,35 @@
             </div>
         </div>
         <div class="my_image">
-            <img src="./images/relaxed-friendly-good-looking-european-guy-with-bristle-smiling-joyfully-with-white-healthy-teeth-holding-hands-pockets-being-happy-satisfied-posing-cheerfully-white-wall-min (1).jpg" width="600"
-            height="600
-            " alt="">
+            <img src="./images/relaxed-friendly-good-looking-european-guy-with-bristle-smiling-joyfully-with-white-healthy-teeth-holding-hands-pockets-being-happy-satisfied-posing-cheerfully-white-wall-min (1).jpg" alt="">
         </div>
     </header>
 
     <section class="recent-writings">
-        <h1>My recent Writings</h1>
+        <h1>My Writings</h1>
+
+        <div class="discover-posts">
+            <div class="search">
+
+                    <input type="text" id="search-posts-box" class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                
+            </div>
+            <div class="tags">
+                <div class="tag">Coding</div>
+                <div class="tag">Web development</div>
+                <div class="tag">Blockchain development</div>
+                <div class="tag">Calisthenics</div>
+                <div class="tag">Web3</div>
+                <div class="tag">HTML</div>
+                <div class="tag">CSS</div>
+                <div class="tag">JavaScript</div>
+                <div class="tag">Crypto</div>
+                <div class="tag">Web design</div>
+                <div class="tag">Pushups</div>
+            </div>
+        </div>
+
         <div class="posts">
             <div class="post">
                 <div class="post-img">
@@ -59,6 +83,9 @@
                     </div>
                     <div class="post-hook">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi earum explicabo in omnis similique numquam sapiente placeat fugit molestias laboriosam!
+                    </div>
+                    <div class="see-more">
+                        <a href="post.html">See more</a>
                     </div>
                 </div>
             </div>
@@ -79,6 +106,9 @@
                     <div class="post-hook">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi earum explicabo in omnis similique numquam sapiente placeat fugit molestias laboriosam!
                     </div>
+                    <div class="see-more">
+                        <a href="post.html">See more</a>
+                    </div>
                 </div>
             </div>
 
@@ -93,15 +123,80 @@
                         <div id="comments">2 comments</div>
                     </div>
                     <div class="post-title">
-                        <h2>How I balance my life as a coder and a calisthenics trainer</h2>
+                        <h2>How to get started with calisthenics</h2>
                     </div>
                     <div class="post-hook">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi earum explicabo in omnis similique numquam sapiente placeat fugit molestias laboriosam!
                     </div>
+                    <div class="see-more">
+                        <a href="post.html">See more</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="post">
+                <div class="post-img">
+                    <img src="./images/web-design-online-technology-content-concept_53876-123927.jpg" alt="">
+                </div>
+                <div class="post-description">
+                    <div class="post-header">
+                        <div id="creation-date">1st September, 2022</div>
+                        <div id="tag" class="post-tag">Web design</div>
+                        <div id="comments">1 comment</div>
+                    </div>
+                    <div class="post-title">
+                        <h2>The Ultimate Guide For Web Design 2022</h2>
+                    </div>
+                    <div class="post-hook">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi earum explicabo in omnis similique numquam sapiente placeat fugit molestias laboriosam!
+                    </div>
+                    <div class="see-more">
+                        <a href="post.html">See more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <div class="post-img">
+                    <img src="./images/full-shot-man-doing-pushups_23-2148801886.jpg" alt="">
+                </div>
+                <div class="post-description">
+                    <div class="post-header">
+                        <div id="creation-date">1st September, 2022</div>
+                        <div id="tag" class="post-tag">Pushups</div>
+                        <div id="comments">1 comment</div>
+                    </div>
+                    <div class="post-title">
+                        <h2>How To 10X Your Pushups</h2>
+                    </div>
+                    <div class="post-hook">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi earum explicabo in omnis similique numquam sapiente placeat fugit molestias laboriosam!
+                    </div>
+                    <div class="see-more">
+                        <a href="post.html">See more</a>
+                    </div>
                 </div>
             </div>
         </div>
-
+        <div class="pagination">
+            <div class="pagination-elements">
+                <div class="arrow-previous">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <div class="pagebtn">1</div>
+                <div class="pagebtn">2</div>
+                <div class="pagebtn">3</div>
+                <div class="pagebtn">4</div>
+                <div class="pagebtn">5</div>
+                <div class="pagebtn">6</div>
+                <div class="pagebtn">7</div>
+                <div class="pagebtn">8</div>
+                <div class="pagebtn">9</div>
+                <div class="pagebtn">10</div>
+                <div class="arrow-next">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="newsletter">
         <h1>Subscribe to my email newsletter to get the latest updates</h1>
@@ -121,6 +216,7 @@
                 <div class="twitter social-icon"><a href="#"><i class="fa-brands fa-twitter"></i></a></div>
                 <div class="instagram social-icon"><a href="#"><i class="fa-brands fa-instagram"></i></a></div>
                 <div class="facebook social-icon"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="github social-icon"><a href="#"><i class="fa-brands fa-github"></i></a></div>
             </div>
         </div>
         <div class="footer-links">
@@ -128,7 +224,7 @@
 
             <div class="ft-links">
                 <ul>
-                    <li class="footer-link"><a href="#">Posts</a></li>
+                    <li class="footer-link"><a href="/posts.html">Posts</a></li>
                     <li class="footer-link"><a href="#">About me</a></li>
                     <li class="footer-link"><a href="#">Contact me</a></li>
                 </ul>
@@ -157,17 +253,18 @@
             
             <div class="location contact-me-element">
                 <i class="fa-solid fa-location-dot"></i>
-                <p>Enbackagården 32, Sigtuna, Sweden</p>
+                <p> Enbackagården 32, Sigtuna, Sweden</p>
             </div>
             <div class="phone contact-me-element">
                 <i class="fa-solid fa-phone"></i>
-                <p>+46 0525-3190342</p>
+                <p> +46 0525-3190342</p>
             </div>
             <div class="email contact-me-element">
                 <i class="fa-solid fa-envelope"></i>
-                <p>seanmuirdev@kwontol.com</p>
+                <p> seanmuirdev@kwontol.com</p>
             </div>
         </div>
     </footer>
+    
 </body>
 </html>
